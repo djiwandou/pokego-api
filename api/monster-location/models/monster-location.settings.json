@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monster_locations",
+  "info": {
+    "name": "Monster Location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "monster_loc_id": {
+      "type": "uid"
+    },
+    "monsters": {
+      "collection": "monster",
+      "via": "monster_locations",
+      "dominant": true
+    }
+  }
+}

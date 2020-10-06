@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monster-locations",
+      "handler": "monster-location.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monster-locations/count",
+      "handler": "monster-location.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monster-locations/:id",
+      "handler": "monster-location.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monster-locations",
+      "handler": "monster-location.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monster-locations/:id",
+      "handler": "monster-location.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monster-locations/:id",
+      "handler": "monster-location.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
